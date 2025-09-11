@@ -18,6 +18,7 @@ public class UserValidationService {
     public Boolean validateUser(String userId) {
         log.info("Calling User Service for {}", userId);
         try {
+
             return userServiceWebClient.get()
                     .uri("/api/users/{userId}/validate", userId)
                     .retrieve()
