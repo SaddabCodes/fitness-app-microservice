@@ -16,7 +16,7 @@ import java.util.Map;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Document(collation = "activities")
+@Document(collection = "activities")
 public class Activity {
 
     private String id;
