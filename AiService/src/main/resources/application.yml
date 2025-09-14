@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: AiService
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: airecommendationfitness
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+
+server:
+  port: 8083
